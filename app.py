@@ -3,13 +3,13 @@ import pandas as pd
 import plotly.express as px
 
 # ---------------- LOAD DATA ----------------
-agg_transaction = pd.read_csv("https://github.com/PARTH-TARSARIYA/PhonePe-Transaction-Insights/blob/main/Data/agg_transaction.csv")
-agg_insurance = pd.read_csv("https://github.com/PARTH-TARSARIYA/PhonePe-Transaction-Insights/blob/main/Data/agg_insurance.csv")
-agg_user = pd.read_csv("https://github.com/PARTH-TARSARIYA/PhonePe-Transaction-Insights/blob/main/Data/agg_user.csv")
-map_transaction = pd.read_csv("https://github.com/PARTH-TARSARIYA/PhonePe-Transaction-Insights/blob/main/Data/map_transaction.csv")
-map_user = pd.read_csv("https://github.com/PARTH-TARSARIYA/PhonePe-Transaction-Insights/blob/main/Data/map_user.csv")
-top_transaction = pd.read_csv("https://github.com/PARTH-TARSARIYA/PhonePe-Transaction-Insights/blob/main/Data/top_transaction.csv")
-top_user = pd.read_csv("https://github.com/PARTH-TARSARIYA/PhonePe-Transaction-Insights/blob/main/Data/top_user.csv")
+agg_transaction = pd.read_csv("https://github.com/PARTH-TARSARIYA/PhonePe-Transaction-Insights/main/Data/agg_transaction.csv")
+agg_insurance = pd.read_csv("https://github.com/PARTH-TARSARIYA/PhonePe-Transaction-Insights/main/Data/agg_insurance.csv")
+agg_user = pd.read_csv("https://github.com/PARTH-TARSARIYA/PhonePe-Transaction-Insights/main/Data/agg_user.csv")
+map_transaction = pd.read_csv("https://github.com/PARTH-TARSARIYA/PhonePe-Transaction-Insights/main/Data/map_transaction.csv")
+map_user = pd.read_csv("https://github.com/PARTH-TARSARIYA/PhonePe-Transaction-Insights/main/Data/map_user.csv")
+top_transaction = pd.read_csv("https://github.com/PARTH-TARSARIYA/PhonePe-Transaction-Insights/main/Data/top_transaction.csv")
+top_user = pd.read_csv("https://github.com/PARTH-TARSARIYA/PhonePe-Transaction-Insights/main/Data/top_user.csv")
 
 # ---------------- RENAME COLUMNS (CRITICAL FIX) ----------------
 agg_transaction.rename(columns={"entity_name": "transaction_type"}, inplace=True)
